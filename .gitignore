@@ -1,0 +1,20 @@
+# Root
+.DS_Store
+Thumbs.db
+*.log
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Backend
+backend/node_modules/
+
+# Env (se existir)
+.env
+.env.local
