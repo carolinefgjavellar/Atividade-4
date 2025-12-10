@@ -3,7 +3,8 @@
 Versão 0.1 — React (Vite) + Express.
 
 ## Dupla
-- Preencha os nomes da dupla aqui.
+- Kalleb Fernandes
+- Pedro Azevedo
 
 ## Como rodar
 
