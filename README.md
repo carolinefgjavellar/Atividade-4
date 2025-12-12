@@ -1,33 +1,61 @@
-# GeoTech - Calculadora de Áreas
+GeoTech – Calculadora de Áreas
 
-Versão 0.1 — React (Vite) + Express.
+Versão 0.1
+Tecnologias utilizadas: React (Vite) no frontend e Express no backend.
+Dupla responsável: Carol Avelar e Mariana.
 
-## Dupla
-- Kalleb Fernandes
-- Pedro Azevedo
+Execução do projeto
+1. Backend – Express
 
-## Como rodar
+Para iniciar o servidor:
 
-### Backend (Express)
-1. Entre na pasta `backend/`
-2. Instale dependências: `npm install`
-3. Inicie: `npm start`
 
-O backend abrirá em `http://localhost:3000`.
+Acesse a pasta backend/
 
-### Frontend (Vite + React)
-1. Entre na pasta `frontend/`
-2. Instale dependências: `npm install`
-3. Inicie: `npm run dev`
+Instale as dependências:
 
-O frontend abrirá em `http://localhost:5173`.
+npm install
 
-## Fluxo
-- Escolha a forma geométrica, preencha as medidas e clique "Calcular Área".
-- O frontend envia `POST http://localhost:3000/area` com JSON `{ forma, medidas }`.
-- O backend valida, calcula e retorna `{ forma, area }`.
-- O frontend exibe o resultado.
 
-## Validações
-- Frontend exige seleção da forma e números válidos.
-- Backend retorna `400` se faltar a forma ou medidas ou campos obrigatórios.
+Inicie o servidor:
+
+npm start
+
+
+O backend será executado em: http://localhost:3000
+
+2. Frontend – React + Vite
+
+Para iniciar o frontend:
+
+Navegue até a pasta frontend/
+
+Instale as dependências:
+
+npm install
+
+
+Inicie o ambiente de desenvolvimento:
+
+npm run dev
+
+
+A aplicação abrirá em: http://localhost:5173
+
+Funcionamento geral
+
+O usuário seleciona uma forma geométrica e informa as medidas necessárias.
+
+Ao clicar em Calcular Área, o frontend envia uma requisição:
+POST http://localhost:3000/area
+contendo:
+
+{ "forma": "...", "medidas": { ... } }
+
+
+O backend verifica os dados, realiza o cálculo e responde:
+
+{ "forma": "...", "area": ... }
+
+
+O frontend mostra o resultado na tela.
